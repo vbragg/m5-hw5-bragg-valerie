@@ -26,6 +26,7 @@ section {
 	padding: 25px;
 	font-size: 6.25rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -36,19 +37,25 @@ section {
 		margin: 3%;
 }
 
-.button1 {
+#button1 {
 	background-color: #FCFF00;
 
 }
 
-.button2 {
+#button2 {
 	background-color: #57FFC9;
 }
 
-.button3 {
+#button3 {
 	background-color: #A5FF01;
 }
 
 .blue {
 	background-color: blue;
+}
+
+@media (min-width: 600px) {
+	#buttons {
+		flex-direction: row;
+	}
 }
